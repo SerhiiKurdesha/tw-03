@@ -1,0 +1,23 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    width: 1150px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
