@@ -414,6 +414,12 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1150px) {
+  .page-header__logo {
+    margin-right: 50px;
+  }
+}
+
 .menu-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +445,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .page-header__btn {
@@ -482,6 +492,12 @@ body {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .container__mobile {

@@ -6,6 +6,12 @@
     align-items: center;
     justify-content: space-between;
 }
+.page-header__logo{
+
+    @media screen and (min-width: 1150px){
+        margin-right: 50px;
+    }
+}
 .menu-toggle{
     display: flex;
     justify-content: flex-end;
@@ -22,6 +28,12 @@
 }
 .menu{
     display: flex;
+}
+.nav__item{
+
+    &:not(:last-child){
+        margin-right: 40px;
+    }
 }
 .page-header__btn{
     padding: 14px 50px 13px ;
@@ -56,6 +68,12 @@
 }
 .menu-container.is-open {
     transform: translateX(0);
+}
+.menu-container{
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
 }
 .container__mobile{
     padding-top: 25px;
