@@ -7,8 +7,10 @@
     justify-content: space-between;
 }
 .menu-toggle{
+    display: flex;
+    justify-content: flex-end;
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }
@@ -46,7 +48,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 15px;
     background: $pink-color;
     z-index: 999;
 
@@ -55,6 +56,11 @@
 }
 .menu-container.is-open {
     transform: translateX(0);
+}
+.container__mobile{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
 .mobile-menu__item{
     
