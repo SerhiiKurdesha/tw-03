@@ -79,6 +79,11 @@
     padding-top: 25px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+.menu__nav{
+    margin-bottom: auto;
 }
 .mobile-menu__item{
     
