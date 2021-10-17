@@ -1,0 +1,69 @@
+.features{
+    padding: 25px 0;
+}
+.features__list{
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.features__item{
+
+    &:not(:last-child){
+        margin-bottom: 39px;
+    }
+}
+@media screen and (min-width: 768px) {
+        .features__item{
+            flex-basis: 50%;
+        }
+    }
+.features__item::before{
+    display: block;
+    content: "";
+    height: 54px;
+}
+.features__item:nth-child(1)::before{
+    background-image: url('/svg-2/one.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features__item:nth-child(2)::before{
+    background-image: url('/svg-2/two.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features__item:nth-child(3)::before{
+    background-image: url('/svg-2/three.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features__item:nth-child(4)::before{
+    background-image: url('/svg-2/four.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features__title{
+    margin-top: 24px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28 / 20 * 100%;
+    color: #150101;
+    text-align: center;
+}
+
+.features__text{
+    margin-top: 9px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19 / 14 * 100%;
+    color: rgba(0, 0, 0, .6);
+    text-align: center;
+    width: 198px;
+    margin: 0 auto;
+}
