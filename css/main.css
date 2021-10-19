@@ -796,8 +796,22 @@ img {
   }
 }
 
-.service__content {
-  max-width: 442px;
+@media screen and (min-width: 768px) {
+  .service__content {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .service__content {
+    max-width: 442px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service__text {
+    display: none;
+  }
 }
 
 .service__title {
