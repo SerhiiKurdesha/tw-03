@@ -75,3 +75,19 @@
         color: $black-color;
     }
 }
+// =========================
+.product__link--current{
+    position: relative;
+    color: $black-color;
+    display: inline-block;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 95%;
+        border: 2px solid #d64374;
+        bottom: -10px;
+    }
+}
+// ==========================
