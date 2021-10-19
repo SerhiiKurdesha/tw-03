@@ -786,6 +786,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .service {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .service__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -815,6 +821,7 @@ img {
 }
 
 .service__title {
+  margin-bottom: 20px;
   font-family: 'Hind Madurai';
   font-weight: 600;
   font-style: normal;
@@ -869,5 +876,11 @@ img {
   color: #fafafa;
   font-size: 16px;
   line-height: 118.75%;
+}
+
+@media screen and (max-width: 767px) {
+  .service__img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
