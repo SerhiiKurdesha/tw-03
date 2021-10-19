@@ -782,6 +782,18 @@ img {
 
 .service {
   background: #f8edf0;
+  padding: 25px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .service__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .service__content {
@@ -799,6 +811,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .service__title {
+    margin-bottom: 16px;
     font-size: 34px;
     line-height: 114.70588%;
   }
@@ -819,11 +832,23 @@ img {
   color: #150101;
 }
 
+@media screen and (min-width: 768px) {
+  .service__text-p {
+    margin-bottom: 35px;
+  }
+}
+
 .service__div {
-  padding: 15px;
+  padding: 15px 42px;
   background: #d64374;
   text-align: center;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .service__div {
+    display: inline-block;
+  }
 }
 
 .service__link {

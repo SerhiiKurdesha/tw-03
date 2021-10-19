@@ -1,8 +1,23 @@
 .service{
     background: #f8edf0;
+    padding: 25px 0;
+}
+.service__container{
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 .service__content{
     max-width: 442px;
+}
+.service__text{
+
+    // @media screen and (max-width: 1119px) {
+    //     display: none;
+    // }
+
 }
 .service__title{
     font-family: 'Hind Madurai';
@@ -13,6 +28,7 @@
     color: #150101;
 
     @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
         font-size: 34px;
         line-height: 39 / 34 * 100%;
     }
@@ -28,15 +44,23 @@
     font-size: 16px;
     line-height: 24 / 16 * 100%;
     color: #150101;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 35px;
+    }
 }
 .service__div{
-   padding: 15px;
+   padding: 15px 42px;
    background: $purple-color;
    text-align: center;
-   border-radius: 5px; 
+   border-radius: 5px;
+   
+   @media screen and (min-width: 768px) {
+       display: inline-block;
+   }
 }
 .service__link{
     color: #fafafa;
     font-size: 16px;
     line-height: 19 / 16 * 100%;
-}
+}    
