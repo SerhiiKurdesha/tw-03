@@ -947,10 +947,6 @@ img {
   margin-top: 50px;
 }
 
-.product__block:nth-child(even) {
-  text-align: end;
-}
-
 @media screen and (max-width: 767px) {
   .product__block:not(:last-child) {
     margin-bottom: 50px;
@@ -974,6 +970,7 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    text-align: end;
   }
 }
 
@@ -1106,6 +1103,12 @@ img {
   font-size: 26px;
   line-height: 134.61538%;
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .product__list-title {
+    text-align: center;
+  }
 }
 
 .product__list-text {
