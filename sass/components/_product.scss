@@ -9,6 +9,18 @@
         padding: 100px 0;
     }
 }
+.product__content{
+    margin-bottom: 50px;
+}
+.product__block{
+
+    @media screen and (min-width: 1120px) {
+        
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
 .product__title{
     margin-bottom: 30px;
     font-style: normal;
@@ -91,3 +103,53 @@
     }
 }
 // ==========================
+
+.product__list-title{
+    margin-bottom: 11px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35 / 26 * 100%;
+    color: $black-color;
+}
+.product__list-text{
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24 / 16 * 100%;
+    color: $black-color;
+}
+.product__price{
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35 / 26 * 100%;
+    color: $black-color;
+
+    & span{
+        font-size: 20px;
+        line-height: 27 / 20 * 100%;
+        text-decoration: line-through;
+        color: $third-black-color;
+    }
+}
+.product__button{
+    padding: 15px 55px 15px 46px;
+    border: 1px solid transparent;
+    background: $purple-color;
+    color: $white-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @media screen and (min-width: 1120px) {
+        transition: background 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+        &:hover, &:focus{
+            background-color: #f36091;
+            box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, .3)
+        }
+    }
+}
