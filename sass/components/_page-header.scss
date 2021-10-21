@@ -35,6 +35,7 @@
         margin-right: 40px;
     }
 }
+// ===========================
 .nav__link{
     font-style: normal;
     font-weight: 400;
@@ -46,14 +47,13 @@
     &:hover, &:focus{
         color: $hover-focus-color;
     }
-}
-// ===========================
-.nav__link--current{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18 / 15 * 100%;
-    color: $hover-focus-color;
 
+    &--current{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18 / 15 * 100%;
+        color: $hover-focus-color;
+    }
 }
 // ===========================
 .page-header__btn{
