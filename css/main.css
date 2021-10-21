@@ -459,6 +459,27 @@ img {
   margin-right: 40px;
 }
 
+.nav__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114.28571%;
+  color: rgba(19, 1, 1, 0.6);
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.nav__link:hover, .nav__link:focus {
+  color: #d23166;
+}
+
+.nav__link--current {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+  color: #d23166;
+}
+
 .page-header__btn {
   padding: 14px 50px 13px;
   color: #ffffff;
@@ -625,7 +646,7 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: 27px;
-    font-weight: 107.40741%;
+    line-height: 107.40741%;
     color: #0f0101;
   }
   .hero__title .span {
