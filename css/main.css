@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1179,4 +1180,90 @@ img {
             box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
   }
 }
+
+.view {
+  padding: 25px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.view__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.view__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.view__info {
+  margin-left: 21px;
+}
+
+.view__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 116.66667%;
+  color: #000000;
+}
+
+.view__country {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 116.66667%;
+  color: rgba(15, 1, 1, 0.6);
+  text-transform: uppercase;
+}
+
+.view__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(15, 1, 1, 0.6);
+  max-width: 344px;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 /*# sourceMappingURL=main.css.map */
