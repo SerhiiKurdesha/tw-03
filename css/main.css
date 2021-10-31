@@ -1239,6 +1239,14 @@ img {
   max-width: 344px;
 }
 
+.view__text::before {
+  content: url("/image/quote-left.jpg");
+}
+
+.view__text::after {
+  content: url("/image/quote-right.jpg");
+}
+
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */

@@ -45,6 +45,14 @@
     line-height: 24 / 16 * 100%;
     color: $third-black-color;
     max-width: 344px;
+
+    &::before{
+        content: url('/image/quote-left.jpg');
+    }
+
+    &::after{
+        content: url('/image/quote-right.jpg');
+    }
 }
 // =================================
 /* Слайдер */
