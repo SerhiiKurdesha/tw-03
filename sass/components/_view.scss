@@ -10,6 +10,14 @@
     margin: -1px;
 }
 // ==========================
+.view__content{
+
+    @media screen and (min-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 .view__flex{
     display: flex;
     align-items: center;
@@ -48,100 +56,33 @@
 
     &::before{
         content: url('/image/quote-left.jpg');
+        margin-right: 12px;
     }
 
     &::after{
         content: url('/image/quote-right.jpg');
+        margin-left: 8px;
     }
 }
-// =================================
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-    display: flex;
-}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
 .slider{
-    position: relative;
-    padding: 0 50px;
-    text-align: center;
-}
-.slider .slick-arrow{
-    position: absolute;
-    top: 50%;
-    margin: -5px 0 0 0;
-    z-index: 10;
-    font-size: 0;
-    height: 14px;
-    width: 14px;
-}
-.slider .slick-arrow.slick-prev{
-    left: 0;
-    background: url('/svg-2/left.svg') 0 0 / 100% no-repeat;
-}
-.slider .slick-arrow.slick-next{
-    right: 0;
-    background: url('/svg-2/right.svg') 0 0 / 100% no-repeat;
-}
-.slider__item{}
-.slider__img{
-    border-radius: 50%;
-}
-.slider .slick-arrow.slick-disabled{
-    opacity: .3;
-}
-
-.slider .slick-dots{
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;   
 }
-.slider .slick-dots li{
+.slider__item{
     margin: 0 5px;
 }
-.slider .slick-dots button{
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: $white-color;
+.slider__img{
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    border: 1px solid $third-black-color;
 }
-.slider .slick-dots li.slick-active button{
-    background-color: $third-black-color;
-    border: 1px solid $third-black-color;
+.view__img{
+    text-align: center;
+    margin-top: 20px;
+    // width: 100%;
+
+    @media screen and (min-width: 767px) {
+        margin: 0;
+    }
 }
-// ====================================
