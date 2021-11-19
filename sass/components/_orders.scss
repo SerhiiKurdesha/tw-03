@@ -48,14 +48,16 @@
 .orders__text{
     margin-top: 20px;
     font-style: normal;
-    font-size: 18px;
-    line-height: 21 / 18 * 100%;
+    font-size: 16px;
+    line-height: 21 / 16 * 100%;
     letter-spacing: 0.01em;
     color: $black-color;
     opacity: 0.7;
 
     @media screen and (min-width: 768px) {
         max-width: 480px;
+        font-size: 18px;
+        line-height: 21 / 18 * 100%;
     }
 
     @media screen and (min-width: 1120px) {
@@ -71,3 +73,30 @@
         margin-bottom: 20px;
     }
 }
+.orders__link{
+    display: flex;
+    align-items: center;
+    color: $black-color;
+    transition: color 250ms ease-in-out;
+
+    &:focus,
+    &:hover{
+        color: #F98AAB;
+    }
+}
+.orders__div{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: $white-color;
+}
+.orders__div-text{
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26 / 22 * 100%;
+}
+

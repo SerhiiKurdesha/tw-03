@@ -356,6 +356,8 @@ ul {
 
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -1357,8 +1359,8 @@ img {
 .orders__text {
   margin-top: 20px;
   font-style: normal;
-  font-size: 18px;
-  line-height: 116.66667%;
+  font-size: 16px;
+  line-height: 131.25%;
   letter-spacing: 0.01em;
   color: #000000;
   opacity: 0.7;
@@ -1367,6 +1369,8 @@ img {
 @media screen and (min-width: 768px) {
   .orders__text {
     max-width: 480px;
+    font-size: 18px;
+    line-height: 116.66667%;
   }
 }
 
@@ -1382,5 +1386,44 @@ img {
 
 .orders__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.orders__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.orders__link:focus, .orders__link:hover {
+  color: #F98AAB;
+}
+
+.orders__div {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.orders__div-text {
+  font-style: normal;
+  font-size: 22px;
+  line-height: 118.18182%;
 }
 /*# sourceMappingURL=main.css.map */
