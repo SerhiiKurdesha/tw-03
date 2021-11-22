@@ -1,0 +1,114 @@
+.question{
+    padding: 50px 0 40px;
+
+    @media screen and (min-width: 480px){
+        padding: 70px 0 60px;
+    }
+
+    @media screen and (min-width: 768px){
+        padding: 135px 0 110px;
+    }
+
+    @media screen and (min-width: 1120px){
+        padding: 191px 0 129px;
+    }
+}
+.question__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32 / 24 * 100%;
+    text-align: center;
+    color: $black-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 34px;
+        line-height: 42 / 34 * 100%;
+    }
+
+    @media screen and (min-width: 1120px) {
+        font-size: 44px;
+        line-height: 52 / 44 * 100%;
+    }
+}
+.question__div{
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: 1120px) {
+        margin-bottom: 48px;
+    }
+}
+.question__form{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 480px) {
+        margin-top: 28;
+        flex-direction: row;
+        max-width: 637px;
+        margin: 0 auto;
+    }
+}
+.question__input{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16 / 14 * 100%;
+    color: #0f0000;
+    opacity: 0.6;
+    border: transparent;
+    width: 100%;
+
+    @media screen and (max-width: 479px) {
+        padding: 15px 20px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 20px 25px;
+    }
+
+    @media screen and (min-width: 1120px) {
+        padding: 29px 30px;
+    }
+}
+.question__button{
+    margin-top: 10px;
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    background-color: $purple-color;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23 / 20 * 100%;
+    color: $white-color;
+    transition: background 300ms ease-in-out;
+
+    &:hover,
+    &:focus{
+        background-color: #f36091;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 20 / 16 * 100%;
+    }
+
+    @media screen and (min-width: 1120px) {
+        width: 134px;
+        height: 74px;
+        font-size: 20px;
+        line-height: 23 / 20 * 100%;
+    }
+}

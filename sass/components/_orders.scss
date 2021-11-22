@@ -1,6 +1,14 @@
 .orders{
     padding: 20px 0;
     background: #f8edf0;
+
+    @media screen and (min-width: 480px) {
+        padding: 40px 0;
+    }
+
+    @media screen and (min-width: 1120px) {
+        padding: 59px 0 0 0;
+    }
 }
 .orders__content{
 
@@ -19,6 +27,12 @@
     
     @media screen and (min-width: 1120px) {
         max-width: 100%;
+        margin-bottom: -55px;
+    }
+}
+.orders__components{
+
+    @media screen and (min-width: 1120px) {
     }
 }
 .orders__img-phone{
