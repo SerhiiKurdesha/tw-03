@@ -1426,4 +1426,34 @@ img {
   font-size: 22px;
   line-height: 118.18182%;
 }
+
+.orders__buy {
+  margin-top: 31px;
+}
+
+@media screen and (min-width: 1120px) {
+  .orders__buy {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .orders__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .orders__social-buy:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .orders__social-buy:not(:last-child) {
+    margin-right: 20px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -99,4 +99,33 @@
     font-size: 22px;
     line-height: 26 / 22 * 100%;
 }
+.orders__buy{
+    margin-top: 31px;
+
+    @media screen and (min-width: 1120px) {
+        margin-top: 50px;
+    }
+}
+.orders__flex{
+    
+    @media screen and (min-width: 480px) {
+        display: flex;
+    }
+}
+.orders__social-buy{
+
+    @media screen and (max-width: 479px) {
+
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }        
+    }
+
+    @media screen and (min-width: 480px) {
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+}
 
