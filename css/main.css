@@ -1622,4 +1622,16 @@ img {
     line-height: 115%;
   }
 }
+
+.footer {
+  background: #0a0808;
+}
+
+.footer__text {
+  color: #ffffff;
+}
+
+.footer__title {
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
