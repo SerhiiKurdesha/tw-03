@@ -3,9 +3,22 @@
     background: #0a0808;
 }
 .footer__content{
+    flex-wrap: wrap;
 
     @media screen and (min-width: 480px){
         display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__wrap{
+    
+    @media screen and (min-width: 480px){
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2);
+    }
+
+    @media screen and (min-width: 1120px){
+        width: calc((100% / 2) - (30px / 2));
     }
 }
 .footer__text{
@@ -16,23 +29,216 @@
     letter-spacing: 0.01em;
     color: $white-color;
     opacity: 0.7;
+    text-align: center;
 
+    @media screen and (min-width: 480px) {
+        text-align: start;
+    }
 }
 .footer__title{
-    margin-top: 25px;
+    margin-top: 15px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 14 / 18 * 100%;
+    line-height: 20 / 18 * 100%;
     color: $white-color;
+
+    text-align: center;
+
+    @media screen and (min-width: 480px){
+        text-align: start;
+    }   
 }
 .footer__social-list{
     display: flex;
+    justify-content: center;
     margin-top: 15px;
+
+    @media screen and (min-width: 480px){
+        justify-content: start;
+    }
 }
 .footer__item{
 
-    &:not(:last-child){
-        margin-right: 10px;
+    @media screen and (max-width: 479px){
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    @media screen and (min-width: 480px){
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+.footer__svg{
+    
+    @media screen and (max-width: 479px){
+        width: 50px;
+        height: 50px;
+    }
+
+    @media screen and (min-width: 480px){
+        width: 30px;
+        height: 30px;
+    }
+}
+.footer__navigation{
+    margin-top: 30px;
+
+    @media screen and (min-width: 480px){
+        margin-top: 0;
+    }
+}
+.footer__navigation-item{
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+// =======================
+.footer__navigation-link{
+    
+    @media screen and (max-width: 479px) {
+        font-style: normal;
+        font-size: 28px;
+        line-height: 30 / 28 * 100%;
+        color: $white-color;
+        opacity: 0.7;
+
+        &--current{
+            font-style: normal;
+            font-size: 28px;
+            line-height: 30 / 28 * 100%;
+            color: $white-color;   
+        }
+    }
+
+    @media screen and (min-width: 480px){
+        font-size: 18px;
+        line-height: 20 / 18 * 100%;
+        color: $white-color;
+        opacity: 0.7;
+
+        &--current{
+            font-size: 18px;
+            line-height: 20 / 18 * 100%;
+            color: $white-color;
+        }
+    }
+}
+// ==========================
+.footer__info{
+
+    @media screen and (max-width: 479px){
+        margin-top: 30px;  
+    }
+}
+.footer__info-item{
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+.footer__info-link{
+    font-style: normal;
+    font-size: 28px;
+    line-height: 30 / 28 * 100%;
+    color: $white-color;
+    opacity: 0.8;
+
+    @media screen and (min-width: 480px){
+        font-size: 18px;
+        line-height: 20 / 18 * 100%;
+    }
+}
+.footer__form{
+    
+    @media screen and (max-width: 479px){
+        margin-top: 30px;  
+    }
+}
+.footer__form-title{
+    
+    @media screen and (max-width: 479px){
+        margin-bottom: 20px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30 / 28 * 100%;
+        color: $white-color;
+    }
+
+    @media screen and (min-width: 480px){
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 20 / 18 * 100%;
+        color: $white-color;
+        text-align: center;
+    }
+}
+.footer__form-form{
+    
+    @media screen and (max-width: 1119px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.footer__form-input{
+    border: 2px solid $purple-color;
+    border-radius: 5px;
+    background: transparent;
+    padding: 20px 20px 19px 30px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16 / 14 * 100%;
+    color: $white-color;
+}
+.footer__form-button{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23 / 20 * 100%;
+    color: $white-color;
+
+    padding: 16px 0;
+    background: #d23166;
+    border-radius: 5px;
+
+    margin-top: 10px;
+}
+.footer__form-list{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.footer__form-item{
+    
+    @media screen and (max-width: 479px) {
+        margin: 0 20px;
+    }
+
+    @media screen and (min-width: 480px){
+        margin: 0 15px;
+    }
+}
+.footer__form-svg{
+    
+    @media screen and (max-width: 479px){
+        width: 50px;
+        height: 50px;
+    }
+
+    @media screen and (min-width: 480px){
+        width: 40px;
+        height: 40px;
     }
 }
