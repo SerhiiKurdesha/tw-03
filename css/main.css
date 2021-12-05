@@ -1949,7 +1949,7 @@ img {
   border: 2px solid #d64374;
   border-radius: 5px;
   background: transparent;
-  padding: 19px 10px 17px 20px;
+  padding: 19px 10px 16px 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
@@ -1961,6 +1961,8 @@ img {
 @media screen and (min-width: 1120px) {
   .footer__form-input {
     width: 263px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -1993,6 +1995,8 @@ img {
 @media screen and (min-width: 1120px) {
   .footer__form-button {
     width: 125px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 
